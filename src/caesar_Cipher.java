@@ -3,14 +3,18 @@ public class caesar_Cipher {
 
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        System.out.println("Welcome to Caesar Cipher example");
-        System.out.println("Enter the word: ");
+        System.out.println("!----Welcome to Caesar Cipher example---!");
+        System.out.println("-----------------------------------------");
+        System.out.println();
+        System.out.println("Enter the single text you wish to encrypt: ");
         String text = input.nextLine();
 
-        int shift = 3;
+        System.out.println("Enter the Shift value: ");
+        Scanner value = new Scanner(System.in);
+        int shift = value.nextInt();
 
         System.out.println("__________________Caesar Cipher__________________");
-        System.out.println("The shift value: " + shift);
+        System.out.println("Shift value: " + shift);
         System.out.println("Encryption: " +encryption(text,shift));
         System.out.println("_________________________________________________");
 

@@ -1,0 +1,30 @@
+Caesar Cipher / Shit Cipher:
+
+named after "Julius Caesar"
+- this is one of the earliest and simplest method of encryption.
+- A type of substitution cipher.
+
+- Substitutions ->    Exchanging each character of the text message with another
+   (Monoalphabetic)   character or symbol.
+
+How its used / done?:
+A shift is used, so each letter of the given text is substituted with a letter of a fixed number of
+positions down the alphabet.
+eg. with a shift of 3, A would be replaced with D, and B would be replaced
+with E.
+
+Algorithm:
+The Caesar Cipher can be expressed in a more mathematical form as follows:
+En(x) = (x+n) mod 26
+
+The encryption of letter "x" is equal to the shift of (x + n),
+"n" being the number of letters shifted.
+We MOD 26 simply to keep it between the ranges of 0 - 25 (Letters of the Alphabet index).
+
+A string of letters variable name "text".
+integer between 0-25 representing the required shift.
+
+Procedure / Method:
+Step (1) Traverse the "text" one character at a time.
+Step (2) For each of the character, sub the character based on Caesar Cipher rule.
+Step (3) Return the new string generated.
